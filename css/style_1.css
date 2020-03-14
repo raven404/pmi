@@ -1144,5 +1144,9 @@ a:hover {
     font-size: 1.05rem
 }
 
+#more {
+    display: none;
+}
+
 
 /*# sourceMappingURL=style_1.css.map */
