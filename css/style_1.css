@@ -638,6 +638,13 @@ a:hover {
     font-size: 14px
 }
 
+.avatar {
+    vertical-align: middle;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+}
+
 .fh5co_display_table_footer {
     height: 40px;
     width: 40px;
