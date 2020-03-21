@@ -13,7 +13,7 @@ a:hover {
 }
 
 .treding_btn {
-    background: #f5bc04;
+    background: #f51404;
     color: #fff;
     margin: 0 10px;
     display: inline-block;
@@ -22,7 +22,7 @@ a:hover {
 
 .treding_btn:hover,
 .treding_btn:focus {
-    background: #f5bc04;
+    background: #f53404;
     color: #fff;
     margin: 0 10px;
     display: inline-block;
@@ -699,6 +699,10 @@ a:hover {
 .footer_menu {
     list-style: none;
     padding: 0
+}
+
+.fh5co_tags_all {
+    color: #f1552ef6;
 }
 
 .footer_menu li>a {
