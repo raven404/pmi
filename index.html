@@ -77,8 +77,8 @@
                 <a class="navbar-brand" href="#"><img src="images/logo.png" alt="img" class="mobile_logo_width" /></a>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mr-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="single.html">About Us<span class="sr-only">(current)</span></a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" id="dropdownMenuButton2" href="single.html">About Us<span class="sr-only">(current)</span></a>
                         </li>
 
                         <li class="nav-item dropdown">
@@ -203,21 +203,20 @@
     <div class="slideshow-container">
 
         <div class="mySlides fade">
-            <div class="numbertext">1 / 3</div>
-            <img src="images/IMG_9935.JPG" style="width:100%">
-            <div class="captext">Caption Text</div>
+            <img src="images/IMG_0065.JPG" id="slides" style="width:100%">
+            <div class="captext">Blanket Distribution</div>
         </div>
 
         <div class="mySlides fade">
-            <div class="numbertext">2 / 3</div>
-            <img src="images/IMG_5969.JPG" style="width:100%">
-            <div class="captext">Caption Two</div>
+
+            <img src="images/IMG_0058.JPG" id="slides" style="width:100%">
+            <div class="captext">Medical Camps</div>
         </div>
 
         <div class="mySlides fade">
-            <div class="numbertext">3 / 3</div>
-            <img src="images/IMG_2601 - Copy.JPG" style="width:100%">
-            <div class="captext">Caption Three</div>
+
+            <img src="images/IMG_0416.JPG" style="width:100%">
+            <div class="captext">Pathshala</div>
         </div>
 
         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -226,44 +225,6 @@
     </div>
     <br>
 
-    <div style="text-align:center">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
-    </div>
-
-    <script>
-        var slideIndex = 1;
-        showSlides(slideIndex);
-
-        function plusSlides(n) {
-            showSlides(slideIndex += n);
-        }
-
-        function currentSlide(n) {
-            showSlides(slideIndex = n);
-        }
-
-        function showSlides(n) {
-            var i;
-            var slides = document.getElementsByClassName("mySlides");
-            var dots = document.getElementsByClassName("dot");
-            if (n > slides.length) {
-                slideIndex = 1
-            }
-            if (n < 1) {
-                slideIndex = slides.length
-            }
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-            }
-            slides[slideIndex - 1].style.display = "block";
-            dots[slideIndex - 1].className += " active";
-        }
-    </script>
 
 
     <div class="container-fluid pt-3">
@@ -341,7 +302,7 @@
                     <h4> <b>Programs</b></h4>
                 </div>
             </div>
-            <div class="owl-carousel owl-theme" id="slider2">
+            <div class="owl-carousel owl-theme" style="align-items: center" id="slider2">
                 <div class="item px-2">
                     <div class="fh5co_hover_news_img">
                         <div class="fh5co_news_img"><img src="images/IMG_1881.JPG" alt="" /></div>
