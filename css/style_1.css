@@ -567,6 +567,41 @@ a:hover {
     font-weight: bold;
 }
 
+body {
+    background: linear-gradient(to right, #9999ff 0%, #ffffff 100%);
+}
+
+.button {
+    display: inline-block;
+    font-family: 'Poppins';
+    font-weight: bold;
+    font-size: 14px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -o-border-radius: 5px;
+    -ms-border-radius: 5px;
+    width: 150px;
+    height: 50px;
+}
+
+.button {
+    background: #f1c430;
+    color: black;
+    border: 2px solid #555555;
+}
+
+.button:hover {
+    background: linear-gradient(to top right, #99ccff 0%, #ff0066 100%);
+    color: white;
+}
+
+.submit {}
+
 .fh5co_tagg {
     background: linear-gradient(to right, #abbaab, #ffffff);
     padding: 10px 15px;
