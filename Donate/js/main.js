@@ -33,7 +33,7 @@
             format: wNumb({
                 decimals: 0,
                 thousand: ',',
-                prefix: '$ ',
+                prefix: '₹ ',
             })
         });
     }
