@@ -273,7 +273,8 @@ a:hover {
 }
 
 .fh5co_img_special_relative {
-    position: relative;
+    height: 120px;
+    width: 90px;
     right: 40%
 }
 
