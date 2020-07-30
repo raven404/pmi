@@ -17,6 +17,48 @@
     <link href="css/owl.theme.default.css" rel="stylesheet" type="text/css" />
     <!-- Bootstrap CSS -->
     <link href="css/style_1.css" rel="stylesheet" type="text/css" />
+    <style>
+        .navbar-nav li:hover>ul.dropdown-menu {
+            display: block;
+        }
+        
+        .dropdown-submenu {
+            position: relative;
+        }
+        
+        .dropdown-submenu>.dropdown-menu {
+            top: 0;
+            left: 100%;
+            margin-top: -6px;
+        }
+        /* rotate caret on hover */
+        
+        .dropdown-menu>li>a:hover:after {
+            text-decoration: underline;
+            transform: rotate(-90deg);
+        }
+    </style>
+    <style>
+        .navbar-nav li:hover>ul.dropdown-menu {
+            display: block;
+        }
+        
+        .dropdown-submenu {
+            position: relative;
+        }
+        
+        .dropdown-submenu>.dropdown-menu {
+            top: 0;
+            left: 100%;
+            margin-top: -6px;
+        }
+        /* rotate caret on hover */
+        
+        .dropdown-menu>li>a:hover:after {
+            text-decoration: underline;
+            transform: rotate(-90deg);
+        }
+    </style>
     <!-- Modernizr JS -->
     <script src="js/modernizr-3.5.0.min.js"></script>
     <style>
@@ -43,6 +85,7 @@
 </head>
 
 <body>
+
     <div class="container-fluid" id="Header">
         <div class="container">
             <div class="row">
@@ -71,6 +114,7 @@
             </div>
         </div>
     </div>
+
     <div class="container-fluid bg-faded fh5co_padd_mediya padding_786">
         <div class="container padding_786">
             <nav class="navbar navbar-toggleable-md navbar-light ">
@@ -85,11 +129,11 @@
                                 <li> <a class="dropdown-item" href="About_us.html">A Family to connect with</a></li>
                                 <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="team.html">PMI Team</a>
                                     <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="team.html">Prabin Singh</a></li>
-                                        <li><a class="dropdown-item" href="team.html">Praise</a></li>
-                                        <li><a class="dropdown-item" href="team.html">Harendra</a></li>
-                                        <li><a class="dropdown-item" href="team.html">Dr.Peter Malakar</a></li>
-                                        <li><a class="dropdown-item" href="team.html">Amit</a></li>
+                                        <li><a class="dropdown-item" href="team.html#Prabin">Prabin Singh</a></li>
+                                        <li><a class="dropdown-item" href="team.html#PRAISE">Praise</a></li>
+                                        <li><a class="dropdown-item" href="team.html#Harendra">Harendra</a></li>
+                                        <li><a class="dropdown-item" href="team.html#Dr Peter Malakar">Dr.Peter Malakar</a></li>
+                                        <li><a class="dropdown-item" href="team.html#Amit">Amit</a></li>
                                     </ul>
                                     <li><a class="dropdown-item" href="team.html">Financial Transperency</a></li>
                                     <li> <a class="dropdown-item" href="About_us.html">FAQs</a></li>
@@ -102,30 +146,30 @@
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">What we do</a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="mission_Statement.html">CHEP</a>
+                                <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">CHEP</a>
                                     <ul class="dropdown-menu">
                                         <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Nandlal Community</a>
                                             <ul class="dropdown-menu">
-                                                <li><a class="dropdown-item" href="#">Health Checkup</a></li>
-                                                <li><a class="dropdown-item" href="#">Pathshala</a></li>
-                                                <li><a class="dropdown-item" href="#">Bal Shiksha Program</a></li>
-                                                <li><a class="dropdown-item" href="#">Vitamin Project</a></li>
-                                                <li><a class="dropdown-item" href="#">Back to school</a></li>
-                                                <li><a class="dropdown-item" href="#">Summer Program</a></li>
-                                                <li><a class="dropdown-item" href="#">Kids Camp</a></li>
-                                                <li><a class="dropdown-item" href="#">Career Counseling</a></li>
-                                                <li><a class="dropdown-item" href="#">Parent's Education</a></li>
-                                                <li><a class="dropdown-item" href="#">Vision Project</a></li>
+                                                <li><a class="dropdown-item" href="Nandlal_Community.html">Health Checkup</a></li>
+                                                <li><a class="dropdown-item" href="Nandlal_Community.html">Pathshala</a></li>
+                                                <li><a class="dropdown-item" href="Nandlal_Community.html">Bal Shiksha Program</a></li>
+                                                <li><a class="dropdown-item" href="Nandlal_Community.html">Vitamin Project</a></li>
+                                                <li><a class="dropdown-item" href="Nandlal_Community.html">Back to school</a></li>
+                                                <li><a class="dropdown-item" href="Nandlal_Community.html">Summer Program</a></li>
+                                                <li><a class="dropdown-item" href="Nandlal_Community.html">Kids Camp</a></li>
+                                                <li><a class="dropdown-item" href="Nandlal_Community.html">Career Counseling</a></li>
+                                                <li><a class="dropdown-item" href="Nandlal_Community.html">Parent's Education</a></li>
+                                                <li><a class="dropdown-item" href="Nandlal_Community.html">Vision Project</a></li>
                                             </ul>
                                         </li>
                                         <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Badabagh Community</a>
                                             <ul class="dropdown-menu">
-                                                <li><a class="dropdown-item" href="#">Health Checkup</a></li>
-                                                <li><a class="dropdown-item" href="#">Back to school</a></li>
-                                                <li><a class="dropdown-item" href="#">Summer Program</a></li>
-                                                <li><a class="dropdown-item" href="#">Kids Camp</a></li>
-                                                <li><a class="dropdown-item" href="#">Career Counseling</a></li>
-                                                <li><a class="dropdown-item" href="#">Parent's Education</a></li>
+                                                <li><a class="dropdown-item" href="badabagh_Community.html">Health Checkup</a></li>
+                                                <li><a class="dropdown-item" href="badabagh_Community.html">Back to school</a></li>
+                                                <li><a class="dropdown-item" href="badabagh_Community.html">Summer Program</a></li>
+                                                <li><a class="dropdown-item" href="badabagh_Community.html">Kids Camp</a></li>
+                                                <li><a class="dropdown-item" href="badabagh_Community.html">Career Counseling</a></li>
+                                                <li><a class="dropdown-item" href="badabagh_Community.html">Parent's Education</a></li>
                                             </ul>
                                         </li>
                                     </ul>
@@ -134,13 +178,13 @@
                                     <a class="dropdown-item" href="About_us.html"></a>
                                 </li>
 
-                                <li> <a class="dropdown-item" href="About_us.html">Campus Engagement</a></li>
+                                <li> <a class="dropdown-item" href="Campus_Engagement.html">Campus Engagement</a></li>
                                 <li> <a class="dropdown-item" href="About_us.html">Awareness Program</a></li>
-                                <li> <a class="dropdown-item" href="About_us.html">Relief Funds</a></li>
-                                <li> <a class="dropdown-item" href="About_us.html">Co-Curriculam Activities</a></li>
+                                <li> <a class="dropdown-item" href="relief_fund.html">Relief Funds</a></li>
+                                <li> <a class="dropdown-item" href="Co-curricular.html">Co-Curriculam Activities</a></li>
                                 <li> <a class="dropdown-item" href="About_us.html">Child Sponsership Program</a></li>
                                 <li> <a class="dropdown-item" href="About_us.html">Field Visit</a></li>
-                                <li> <a class="dropdown-item" href="About_us.html">Blanket Drive</a></li>
+                                <li> <a class="dropdown-item" href="Blanket_drive.html">Blanket Drive</a></li>
                                 <li> <a class="dropdown-item" href="About_us.html">Medical Camp</a></li>
 
                         </li>
@@ -150,8 +194,8 @@
                         <li class="nav- item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Impact<span class="sr-only">(current)</span></a>
                             <div class="dropdown-menu" aria-labelledby="dropdownMenuLink_1">
-                                <a class="dropdown-item" href="impact.html">Impact and Outreach</a>
-                                <a class="dropdown-item" href="impact.html">Success Stories</a>
+                                <a class="dropdown-item" href="#">Impact and Outreach</a>
+                                <a class="dropdown-item" href="#">Success Stories</a>
 
                             </div>
                         </li>
@@ -162,7 +206,7 @@
                                 <a class="dropdown-item" href="Programs.html">Volunteer</a>
                                 <a class="dropdown-item" href="Internship.html">Intern</a>
                                 <a class="dropdown-item" href="Alumini.html">Alumini</a>
-                                <a class="dropdown-item" href="Donate.html">Donate</a>
+                                <a class="dropdown-item" href="Donation.html">Donate</a>
 
                             </div>
                             <li class="nav- item dropdown">
@@ -270,6 +314,7 @@
             </div>
         </div>
     </div>
+
     <div class="container-fluid fh5co_video_news_bg pb-4">
         <div class="container animate-box" data-animate-effect="fadeIn">
             <div>
@@ -373,6 +418,7 @@
             </div>
         </div>
     </div>
+
     <div class="container-fluid pb-4 pt-4 paddding">
         <div class="container paddding">
             <div class="row mx-0">
@@ -548,6 +594,7 @@
             <a href="#" class="js-gotop"><i class="fa fa-arrow-up"></i></a>
         </div>
     </div>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <!--<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>-->

@@ -16,6 +16,27 @@
     <link href="css/owl.theme.default.css" rel="stylesheet" type="text/css" />
     <!-- Bootstrap CSS -->
     <link href="css/style_1.css" rel="stylesheet" type="text/css" />
+    <style>
+        .navbar-nav li:hover>ul.dropdown-menu {
+            display: block;
+        }
+        
+        .dropdown-submenu {
+            position: relative;
+        }
+        
+        .dropdown-submenu>.dropdown-menu {
+            top: 0;
+            left: 100%;
+            margin-top: -6px;
+        }
+        /* rotate caret on hover */
+        
+        .dropdown-menu>li>a:hover:after {
+            text-decoration: underline;
+            transform: rotate(-90deg);
+        }
+    </style>
     <!-- Modernizr JS -->
     <script src="js/modernizr-3.5.0.min.js"></script>
 </head>
@@ -51,6 +72,7 @@
             </div>
         </div>
     </div>
+
     <div class="container-fluid bg-faded fh5co_padd_mediya padding_786">
         <div class="container padding_786">
             <nav class="navbar navbar-toggleable-md navbar-light ">
@@ -58,74 +80,121 @@
                 <a class="navbar-brand" href="#"><img src="images/logo.png" alt="img" class="mobile_logo_width" /></a>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mr-auto">
-                        <!-- <li class="nav-item dropdown">
-                            <a class="nav-link" id="dropdownMenuButton2" href="About_us.html">About Us<span class="sr-only">(current)</span></a>
-                        </li> -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> About </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li> <a class="dropdown-item" href="mission_Statement.html">Mission Statement </a></li>
+                                <li> <a class="dropdown-item" href="About_us.html">A Family to connect with</a></li>
+                                <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="team.html">PMI Team</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="team.html#Prabin">Prabin Singh</a></li>
+                                        <li><a class="dropdown-item" href="team.html#PRAISE">Praise</a></li>
+                                        <li><a class="dropdown-item" href="team.html#Harendra">Harendra</a></li>
+                                        <li><a class="dropdown-item" href="team.html#Dr Peter Malakar">Dr.Peter Malakar</a></li>
+                                        <li><a class="dropdown-item" href="team.html#Amit">Amit</a></li>
+                                    </ul>
+                                    <li><a class="dropdown-item" href="team.html">Financial Transperency</a></li>
+                                    <li> <a class="dropdown-item" href="About_us.html">FAQs</a></li>
+
+
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">What we do</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">CHEP</a>
+                                    <ul class="dropdown-menu">
+                                        <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Nandlal Community</a>
+                                            <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item" href="Nandlal_Community.html">Health Checkup</a></li>
+                                                <li><a class="dropdown-item" href="Nandlal_Community.html">Pathshala</a></li>
+                                                <li><a class="dropdown-item" href="Nandlal_Community.html">Bal Shiksha Program</a></li>
+                                                <li><a class="dropdown-item" href="Nandlal_Community.html">Vitamin Project</a></li>
+                                                <li><a class="dropdown-item" href="Nandlal_Community.html">Back to school</a></li>
+                                                <li><a class="dropdown-item" href="Nandlal_Community.html">Summer Program</a></li>
+                                                <li><a class="dropdown-item" href="Nandlal_Community.html">Kids Camp</a></li>
+                                                <li><a class="dropdown-item" href="Nandlal_Community.html">Career Counseling</a></li>
+                                                <li><a class="dropdown-item" href="Nandlal_Community.html">Parent's Education</a></li>
+                                                <li><a class="dropdown-item" href="Nandlal_Community.html">Vision Project</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Badabagh Community</a>
+                                            <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item" href="badabagh_Community.html">Health Checkup</a></li>
+                                                <li><a class="dropdown-item" href="badabagh_Community.html">Back to school</a></li>
+                                                <li><a class="dropdown-item" href="badabagh_Community.html">Summer Program</a></li>
+                                                <li><a class="dropdown-item" href="badabagh_Community.html">Kids Camp</a></li>
+                                                <li><a class="dropdown-item" href="badabagh_Community.html">Career Counseling</a></li>
+                                                <li><a class="dropdown-item" href="badabagh_Community.html">Parent's Education</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="About_us.html"></a>
+                                </li>
+
+                                <li> <a class="dropdown-item" href="Campus_Engagement.html">Campus Engagement</a></li>
+                                <li> <a class="dropdown-item" href="About_us.html">Awareness Program</a></li>
+                                <li> <a class="dropdown-item" href="relief_fund.html">Relief Funds</a></li>
+                                <li> <a class="dropdown-item" href="Co-curricular.html">Co-Curriculam Activities</a></li>
+                                <li> <a class="dropdown-item" href="About_us.html">Child Sponsership Program</a></li>
+                                <li> <a class="dropdown-item" href="About_us.html">Field Visit</a></li>
+                                <li> <a class="dropdown-item" href="Blanket_drive.html">Blanket Drive</a></li>
+                                <li> <a class="dropdown-item" href="About_us.html">Medical Camp</a></li>
+
+                        </li>
+                        </ul>
+                        </li>
+
                         <li class="nav- item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About <span class="sr-only">(current)</span></a>
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Impact<span class="sr-only">(current)</span></a>
                             <div class="dropdown-menu" aria-labelledby="dropdownMenuLink_1">
-                                <a class="dropdown-item" href="#mission">Mission Statement</a>
-                                <a class="dropdown-item" href="#family">A Family to connect with</a>
-                                <a class="dropdown-item" href="team.html">PMI Team</a>
-                                <a class="dropdown-item" href="FAQs.html">FAQs</a>
+                                <a class="dropdown-item" href="#">Impact and Outreach</a>
+                                <a class="dropdown-item" href="#">Success Stories</a>
+
                             </div>
                         </li>
+
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">What we Do !!<span class="sr-only">(current)</span></a>
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Get Involved<span class="sr-only">(current)</span></a>
                             <div class="dropdown-menu" aria-labelledby="dropdownMenuLink_1">
-                                <a class="dropdown-item" href="Programs.html">Programs</a>
-                                <a class="dropdown-item" href="index.html#Projects">Projects</a>
-                                <a class="dropdown-item" href="index.html#Health">Medical Camp</a>
-                                <a class="dropdown-item" href="index.html#kids_Camp">Kid's Camp</a>
-                                <a class="dropdown-item" href="index.html#Awareness_Program">Awareness Program</a>
-                                <a class="dropdown-item" href="index.html#Annual_Blanket_Drive">Annual Blanket Drive</a>
+                                <a class="dropdown-item" href="Programs.html">Volunteer</a>
+                                <a class="dropdown-item" href="Internship.html">Intern</a>
+                                <a class="dropdown-item" href="Alumini.html">Alumini</a>
+                                <a class="dropdown-item" href="Donation.html">Donate</a>
 
                             </div>
                             <li class="nav- item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Impact<span class="sr-only">(current)</span></a>
+                                <a class="nav-link dropdown-toggle" href="#" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Events<span class="sr-only">(current)</span></a>
                                 <div class="dropdown-menu" aria-labelledby="dropdownMenuLink_1">
-                                    <a class="dropdown-item" href="impact.html">Impact and Outreach</a>
-                                    <a class="dropdown-item" href="impact.html">Success Stories</a>
-                                    <!-- <a class="dropdown-item" href="FAQs.html">FAQs</a> -->
+                                    <a class="dropdown-item" href="Events.html">Chat Over Coffee</a>
+                                    <a class="dropdown-item" href="Events.html">Focal Point</a>
+                                    <a class="dropdown-item" href="Events.html">Forums</a>
+                                    <a class="dropdown-item" href="Events.html">Music Concerts</a>
+                                    <a class="dropdown-item" href="Events.html">Language Class</a>
+
                                 </div>
                             </li>
 
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Get Involved<span class="sr-only">(current)</span></a>
-                                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink_1">
-                                    <a class="dropdown-item" href="Programs.htmlq">Volunteer</a>
-                                    <a class="dropdown-item" href="Programs.html">Intern</a>
-                                    <a class="dropdown-item" href="Alumini.htmls">Alumini</a>
-                                    <a class="dropdown-item" href="team.html">Staff</a>
-
-                                </div>
-                                <li class="nav- item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Events<span class="sr-only">(current)</span></a>
-                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink_1">
-                                        <a class="dropdown-item" href="Events.html">Chat Over Coffee</a>
-                                        <a class="dropdown-item" href="Events.html">Focal Point</a>
-                                        <a class="dropdown-item" href="Events.html">Forums</a>
-
-                                    </div>
-                                </li>
-
-                                <li class="nav-item ">
-                                    <a class="nav-link" href="Donate/index.html" id="dropdownMenuButton2">Donate <span class="sr-only">(current)</span></a>
-                                </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" href="Donation.html" id="dropdownMenuButton2">Media <span class="sr-only">(current)</span></a>
+                            </li>
 
 
 
-                                <li class="nav-item ">
-                                    <a class="nav-link" href="Contact_us.html" id="dropdownMenuButton2">Contact <span class="sr-only">(current)</span></a>
-                                </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" href="Contact_us.html" id="dropdownMenuButton2">Contact <span class="sr-only">(current)</span></a>
+                            </li>
                     </ul>
                 </div>
             </nav>
         </div>
     </div>
 
-    </div>
-    <div id="fh5co-title-box" style="background-image: url(images/IMG_0416.jpg);" data-stellar-background-ratio="1" style="width: 1700px;">
+    <div id="fh5co-title-box" style="background-image: url(images/IMG_0416.jpg);" data-stellar-background-ratio="1" style="width: 1700px;" style="text-align: justify; font-family: monospace; ">
         <div class="overlay"></div>
         <div class="page-title">
             <img src="images/logo.png" alt="img1" id="mission">
@@ -133,12 +202,13 @@
             <h2>Passion Movement International</h2>
         </div>
     </div>
+
     <div id="fh5co-single-content" class="container-fluid pb-4 pt-4 paddding" style="  background: linear-gradient(to right, #e8cbc0, #636fa4);">
         <div class="container paddding">
             <div class="row mx-0">
 
                 <h3 style="color :rebeccapurple" id="family"><b>A Family to connect with...</b> </h3><br>
-                <p style="text-align: justify" style="font-family: Verdana, Geneva, Tahoma, sans-serif">
+                <p style="text-align: justify" style="text-align: justify; font-family: monospace; ">
                     It has always been PMI’s ambition to create an atmosphere where anyone can connect and feel welcome – a home away from home. Being situated so close to Delhi University has given us the unique opportunity to invest in students lives, and provide ways
                     for them to invest in others.Life in Delhi is full of stresses, opportunities, and decisions so we have made it our passion to encourage, help, and guide students towards a better Since our beginning in 2006 we have seen many people
                     grow and develop their skills, people that are now changing the face of India and even around the world. For instance, several of our volunteers have been selected into Indian Administrative Services. No matter what field of study,
@@ -154,6 +224,7 @@
 
         </div>
     </div>
+
     <div class="container-fluid fh5co_footer_bg pb-3">
         <div class="container-fluid fh5co_footer_bg pb-3">
             <div class="container animate-box">
@@ -230,7 +301,8 @@
         </div>
 
     </div>
-    </div>
+
+
     <div class="container-fluid fh5co_footer_right_reserved">
         <div class="container">
             <div class="row  ">
