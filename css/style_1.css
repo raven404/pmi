@@ -496,6 +496,10 @@ a:hover {
     display: inline-block
 }
 
+#more {
+    display: none;
+}
+
 .fh5co_hover_news_img_video_tag_position_absolute_1_play_button_1:before {
     position: absolute;
     content: '';
@@ -1380,3 +1384,7 @@ img {
 
 
 /*# sourceMappingURL=style_1.css.map */
+
+#moreread {
+    display: none;
+}
