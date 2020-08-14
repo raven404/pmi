@@ -4,3 +4,5 @@
 [0813/165033.071:ERROR:http_transport_win.cc(276)] WinHttpSendRequest: The operation completed successfully. (0x0)
 [0813/165332.639:ERROR:process_info.cc(359)] UncheckedAllocate
 [0813/165335.611:ERROR:process_info.cc(359)] UncheckedAllocate
+[0813/211859.488:ERROR:http_transport_win.cc(276)] WinHttpSendRequest: The operation completed successfully. (0x0)
+[0814/164946.835:ERROR:crash_report_database_win.cc(428)] unexpected header
