@@ -157,7 +157,9 @@
     }
     
     .mobile_logo_width {
-        display: none
+        display: none;
+        border-radius:2px;
+        
     }
     
     .fh5co_padd_mediya {
