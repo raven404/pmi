@@ -53,7 +53,7 @@
             <div class="col-12 col-md-5 col-lg-3 position_footer_relative">
                 <div class="footer_main_title py-3"> Most Viewed Posts</div>
                 {%for obj in latest%}
-                {% if obj.view_count > 1 %}
+                {% if obj.view_count >  1 %}
                 <!-- <h4>{{obj.view_count}}</h4> -->
                 <div class="footer_makes_sub_font"> {{obj.timestamp.date}}</div>
                 <a href="{{ obj.get_absolute_url }}" class="footer_post pb-4"> {{obj.title}}</a>
