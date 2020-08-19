@@ -8,6 +8,8 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('posts.urls', namespace='posts')),
     path('', include('subscribe.urls', namespace='subscribe')),
+    path('', include('events.urls', namespace='events')),
+
 
     path('tinymce/', include('tinymce.urls')),
 

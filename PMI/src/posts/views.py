@@ -234,47 +234,6 @@ class PostDeleteView(DeleteView):
         return self.post(request, *args, **kwargs)
 
 
-def about(request):
-    value = now
-    return render(request, 'about.html', {'value': value, })
-
-
-def contact(request):
-    value = now
-    return render(request, 'contact.html', {'value': value, 'latest': latest})
-
-
-def team(request):
-    team = Team.objects.filter(
-        categories__title__exact="team").order_by('-timestamp')
-    value = now
-    context = {
-        'team': team,
-        'value': value,
-        'latest': latest
-    }
-
-    return render(request, 'team.html', context)
-
-
-def impact(request):
-    impact = Team.objects.filter(
-        categories__title__exact="impact").order_by('-timestamp')
-    value = now
-    context = {
-        'impact': impact,
-        'value': value,
-        'latest': latest
-    }
-
-    return render(request, 'impact.html', context)
-
-
-def faqs(request):
-    value = now
-    return render(request, 'FAQs.html', {'value': value, 'latest': latest})
-
-
 # def index(request):
 #     programs = Post.objects.filter(
 #         featured=True, categories__title__exact="program").order_by('-timestamp')[0:3]
