@@ -572,11 +572,6 @@
         font-weight: bold;
     }
     
-    body {
-        /*     background: linear-gradient(to right, #9999ff 0%, #ffffff 100%);
- */
-    }
-    
     .button {
         display: inline-block;
         font-family: 'Poppins';
