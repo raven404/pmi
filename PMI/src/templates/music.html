@@ -18,44 +18,22 @@
                     </div>
                 </div>
                 <div class="owl-carousel owl-theme" style="align-items: center" id="slider2">
+                    {% for obj in pics %}
                     <div class="item px-2">
                         <div class="fh5co_hover_news_img">
-                            <div class="fh5co_news_img"><img src="images/music band/19.jpg" alt="" /></div>
+                            <div class="fh5co_news_img"><img src="{{ obj.images.url }}" alt="" /></div>
 
                         </div>
                     </div>
-                    <div class="item px-2">
-                        <div class="fh5co_hover_news_img">
-                            <div class="fh5co_news_img"><img src="images/music band/20.jpg" alt="" /></div>
-                        </div>
-                    </div>
-                    <div class="item px-2">
-                        <div class="fh5co_hover_news_img">
-                            <div class="fh5co_news_img"><img src="images/KIDS CAMP/IMG_3156.JPG" alt="" /></div>
-                        </div>
-                    </div>
-                    <div class="item px-2">
-                        <div class="fh5co_hover_news_img">
-                            <div class="fh5co_news_img"><img src="images/KIDS CAMP/IMG_3238.JPG" alt="" /></div>
-
-                        </div>
-                    </div>
-                    <div class="item px-2">
-                        <div class="fh5co_hover_news_img">
-                            <div class="fh5co_news_img"><img src="images/KIDS CAMP/IMG_3274.JPG" alt="" /></div>
-
-                        </div>
-                    </div>
+                    {%endfor%}
                 </div>
             </div>
         </div>
-        <div class="" id="paraFont"> “My heart, which is so full to overflowing, has often been solaced and refreshed by
-            music when sick and weary.” ― Martin Luther Henry Wadsworth Longfellow wrote, “Music is the universal
-            language of mankind.” It is possible that we may not
-            be a good singer nor great musicians yet have a strong affection for music. PMI is offering a platform for
-            volunteers who loves music to come together and formed the PMI music band. In the past PMI, music band has
-            performed in different
-            colleges within and outside Delhi NCR on different occasions.
+        <div>
+            {%for obj in event%}
+            <div>{{obj.content | safe}}</div>
+            {%endfor%}
+
         </div>
         <br>
         <br>

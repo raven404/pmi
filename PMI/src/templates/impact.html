@@ -19,44 +19,21 @@
                     </div>
                 </div>
                 <div class="owl-carousel owl-theme" style="align-items: center" id="slider2">
+                    {% for obj in pics %}
                     <div class="item px-2">
                         <div class="fh5co_hover_news_img">
-                            <div class="fh5co_news_img"><img src="images/music band/19.jpg" alt="" /></div>
+                            <div class="fh5co_news_img"><img src="{{ obj.images.url }}" alt="" /></div>
 
                         </div>
                     </div>
-                    <div class="item px-2">
-                        <div class="fh5co_hover_news_img">
-                            <div class="fh5co_news_img"><img src="images/music band/20.jpg" alt="" /></div>
-                        </div>
-                    </div>
-                    <div class="item px-2">
-                        <div class="fh5co_hover_news_img">
-                            <div class="fh5co_news_img"><img src="images/KIDS CAMP/IMG_3156.JPG" alt="" /></div>
-                        </div>
-                    </div>
-                    <div class="item px-2">
-                        <div class="fh5co_hover_news_img">
-                            <div class="fh5co_news_img"><img src="images/KIDS CAMP/IMG_3238.JPG" alt="" /></div>
-
-                        </div>
-                    </div>
-                    <div class="item px-2">
-                        <div class="fh5co_hover_news_img">
-                            <div class="fh5co_news_img"><img src="images/KIDS CAMP/IMG_3274.JPG" alt="" /></div>
-
-                        </div>
-                    </div>
+                    {%endfor%}
                 </div>
             </div>
         </div>
-        <div class="" id="paraFont"> Being located in the capital city of the country we have the opportunity to meet
-            the beauty of diversity. A person from different states, different background, and different goal comes
-            together. As PMI team it is our desire to reach out and
-            bring connection, building relationship without any form of discriminations in the picture. Giving them a
-            common platform to share their talents and ideas. Training them to become a good citizen and helping them to
-            respect the uniqueness
-            of every individual.
+        <div>
+            {%for obj in event%}
+            <div>{{obj.content | safe}}</div>
+            {%endfor%}
         </div>
         <br>
         <br>

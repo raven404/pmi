@@ -19,52 +19,21 @@
                     </div>
                 </div>
                 <div class="owl-carousel owl-theme" style="align-items: center" id="slider2">
+                    {% for obj in pics %}
                     <div class="item px-2">
                         <div class="fh5co_hover_news_img">
-                            <div class="fh5co_news_img"><img src="images/music band/19.jpg" alt="" /></div>
+                            <div class="fh5co_news_img"><img src="{{ obj.images.url }}" alt="" /></div>
 
                         </div>
                     </div>
-                    <div class="item px-2">
-                        <div class="fh5co_hover_news_img">
-                            <div class="fh5co_news_img"><img src="images/music band/20.jpg" alt="" /></div>
-                        </div>
-                    </div>
-                    <div class="item px-2">
-                        <div class="fh5co_hover_news_img">
-                            <div class="fh5co_news_img"><img src="images/KIDS CAMP/IMG_3156.JPG" alt="" /></div>
-                        </div>
-                    </div>
-                    <div class="item px-2">
-                        <div class="fh5co_hover_news_img">
-                            <div class="fh5co_news_img"><img src="images/KIDS CAMP/IMG_3238.JPG" alt="" /></div>
-
-                        </div>
-                    </div>
-                    <div class="item px-2">
-                        <div class="fh5co_hover_news_img">
-                            <div class="fh5co_news_img"><img src="images/KIDS CAMP/IMG_3274.JPG" alt="" /></div>
-
-                        </div>
-                    </div>
+                    {%endfor%}
                 </div>
             </div>
         </div>
-        <div class="" id="paraFont">Field visit is one of the most challenging programs. It is the time where we visit
-            our CHEP kids to see their conditions and challenges they faced at home. This gives us a bigger picture and
-            a better understanding of our kids. Knowing that
-            parents play an important role we also meet and follow up to each and every family of our kids. It is our
-            goal to build a strong relationship with the whole family where we engage them into deeper discussion of
-            various struggles and challenges
-            they face as a family. This allows us to get involve and jump right at the root cause of the problem where
-            we can work out together and provide them with the help they need. We also conduct survey in slums along
-            with our volunteer. We
-            also visit our students at campus and hostels who are studying in Delhi University along with volunteers.
-            Apart from home visit we also have another field visit with our students and volunteers in and around Delhi
-            like visiting the National
-            Science Museum and other important places. This helps them with their studies and at the same time gives
-            them the opportunity to explore and develop a sense of unity.
-
+        <div>
+            {%for obj in event%}
+            <div>{{obj.content | safe}}</div>
+            {%endfor%}
         </div>
         <br>
         <br>

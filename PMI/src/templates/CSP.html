@@ -19,72 +19,21 @@
                     </div>
                 </div>
                 <div class="owl-carousel owl-theme" style="align-items: center" id="slider2">
+                    {% for obj in pics %}
                     <div class="item px-2">
                         <div class="fh5co_hover_news_img">
-                            <div class="fh5co_news_img"><img src="images/music band/19.jpg" alt="" /></div>
+                            <div class="fh5co_news_img"><img src="{{ obj.images.url }}" alt="" /></div>
 
                         </div>
                     </div>
-                    <div class="item px-2">
-                        <div class="fh5co_hover_news_img">
-                            <div class="fh5co_news_img"><img src="images/music band/20.jpg" alt="" /></div>
-                        </div>
-                    </div>
-                    <div class="item px-2">
-                        <div class="fh5co_hover_news_img">
-                            <div class="fh5co_news_img"><img src="images/KIDS CAMP/IMG_3156.JPG" alt="" /></div>
-                        </div>
-                    </div>
-                    <div class="item px-2">
-                        <div class="fh5co_hover_news_img">
-                            <div class="fh5co_news_img"><img src="images/KIDS CAMP/IMG_3238.JPG" alt="" /></div>
-
-                        </div>
-                    </div>
-                    <div class="item px-2">
-                        <div class="fh5co_hover_news_img">
-                            <div class="fh5co_news_img"><img src="images/KIDS CAMP/IMG_3274.JPG" alt="" /></div>
-
-                        </div>
-                    </div>
+                    {%endfor%}
                 </div>
             </div>
         </div>
-        <div class="" id="paraFont">Every child has the right to study. But not everyone is having the opportunity to
-            learn and to enroll themselves in schools. So, it is our goal to provide the opportunity to learn and enroll
-            as many Children as possible from slums that never
-            had the opportunity due to financial struggles and are working as child labor or drop out at an early
-            education. At the same time there are many challenges in order to bring the kids back to school especially
-            for students who have completed
-            their higher secondary education (class xii). This is because most of the parents in slums believe that
-            their children’s have completed their education (minimum education required) and are ready to work and
-            pushed them to start looking
-            for jobs in order to support the family. So in our back to school program PMI is providing all the financial
-            needs of the students throughout their education under Child Sponsorship Program. The sponsorship program is
-            classified as follows:
-            <br> <br>
-            <p>
-                Category1: Nursery to class xii Apart from helping with their admission we provide them with all the
-                necessary study materials starting from uniform, pencil, books (note book and text book), bags, school
-                shoes and sometimes their financial need. So ₹1000
-                per month is require in order to sponsor a child.
-            </p>
-            <br>
-            <p>
-                Category 2: Graduation and post Graduation program We provide financially for their admission, exam fee,
-                monthly allowances (for Tiffin, transportation and study materials needed to buy). It requires
-                approximately ₹ 31,000 to ₹46,000 per year to sponsor
-                one student. (Here the fees changes depending on the course selected for admission) Admission: ₹7000 –
-                ₹10,000 / year Monthly allowances: ₹2000 – ₹3000 / month
-            </p>
-            <br>
-            <p>
-            <h4>Scholarship Program :</h4><br> Under this program scholarship is provided to students studying in and
-            around Delhi Universities. It is specially meant for students who are good in academics but struggles
-            financially. Our goal is to
-            help them complete their courses and give them the opportunity to continue their studies.
-
-            </p>
+        <div>
+            {%for obj in event%}
+            <div>{{obj.content | safe}}</div>
+            {%endfor%}
         </div>
         <br>
         <br>
