@@ -20,76 +20,21 @@
                     </div>
                 </div>
                 <div class="owl-carousel owl-theme" style="align-items: center" id="slider2">
+                    {% for obj in pics %}
                     <div class="item px-2">
                         <div class="fh5co_hover_news_img">
-                            <div class="fh5co_news_img"><img src="images/medical/18.jpg" alt="" /></div>
+                            <div class="fh5co_news_img"><img src="{{ obj.images.url }}" alt="" /></div>
 
                         </div>
                     </div>
-                    <div class="item px-2">
-                        <div class="fh5co_hover_news_img">
-                            <div class="fh5co_news_img"><img src="images/medical/IMG_0224.JPG" alt="" /></div>
-                        </div>
-                    </div>
-                    <div class="item px-2">
-                        <div class="fh5co_hover_news_img">
-                            <div class="fh5co_news_img"><img src="images/medical/IMG_2430.JPG" alt="" /></div>
-                        </div>
-                    </div>
-                    <div class="item px-2">
-                        <div class="fh5co_hover_news_img">
-                            <div class="fh5co_news_img"><img src="images/medical/IMG_3494.JPG" alt="" /></div>
-
-                        </div>
-                    </div>
-                    <div class="item px-2">
-                        <div class="fh5co_hover_news_img">
-                            <div class="fh5co_news_img"><img src="images/medical/IMG_3548.JPG" alt="" /></div>
-
-                        </div>
-                    </div>
+                    {%endfor%}
                 </div>
             </div>
         </div>
-        <div class=" " style=" font-family:Arial, Helvetica, sans-serif; text-align: justify;"> <br> “We serve because
-            we are served “ Since 2007 we have a great opportunity to serve in different areas and witness the changes
-            in the lives of an individual and within the community. Providing education to the poor is one of the main
-            goals
-            of our NGO. So under our CHEP program we were able to give admission for hundreds of students from slums who
-            could not afford to study due to financial problems. Approximately 80 students have completed class x and
-            class xii. Many have
-            also completed their master through our sponsorship program and work in corporate sectors and some volunteer
-            in PMI. We work with our volunteer and provide a 3 year scholarship program to hundreds of blind students
-            studying in Delhi University
-            and also provided them with Braille. We were able to give free English class to more than 500 students who
-            now works in different Multinational companies and some even work as English teacher. We even had the
-            opportunity to work with the
-            students in most of all the colleges in and around Delhi. Scholarship was given to university students to
-            support them financially. Not only this we were able to help students with their mental health by providing
-            free counselling and
-            medical assistance to students who are depressed and stressed due to academic and other reasons. Apart from
-            education we also work to bring awareness program on cleanliness and health (physical and mental health). We
-            distributed multi
-            vitamins to more than 100 kids in the slum under our Vitamin projects. Free medical camp was conducted every
-            year in slums of our operational areas. We also conduct programs to educate our kids along with their
-            parents on gender equality,
-            the need to respect every one and learning to see the uniqueness of every individual to bring development in
-            the society. We distributed more than 500 blankets to homeless during winter every year. In response to
-            Covid19 pandemic we were
-            able to distribute care packages to all the families of our CHEP kids and a separate care packages to our
-            CHEP kids in all our operational areas. Volunteer plays an important role in implementing all the programs
-            and project’s. It is always
-            our dream to make our NGO a home for our volunteers where they are cared and loved. Where they can serve the
-            society with confidence. Many universities like Tata Institute of Social Service, Symbiosis University and
-            universities in and
-            around Delhi send their students for internship program with us approximately 100 of students have completed
-            their internship program. Through our Focal point program we provide a platform for our volunteers and
-            students to share their
-            thoughts and ideas on different topics and present them. Many of our volunteers now worked both in private
-            and public offices. Some went abroad to work. While some cleared top level national exam like UPSC and
-            become IAS, IFS and Army
-            Officers. We are looking forward to bring changes to many lives. To serve humanity with love and care for
-            the needy. It is always blessed to give than to receive.
+        <div> <br>
+            {%for obj in event%}
+            <div>{{obj.content | safe}}</div>
+            {%endfor%}
         </div>
         <br>
         <br>

@@ -19,54 +19,22 @@
                     </div>
                 </div>
                 <div class="owl-carousel owl-theme" style="align-items: center" id="slider2">
+                    {% for obj in pics %}
                     <div class="item px-2">
                         <div class="fh5co_hover_news_img">
-                            <div class="fh5co_news_img"><img src="images/RELIEF FUND/208058_1053566219602_1268_n.jpg"
-                                    alt="" /></div>
+                            <div class="fh5co_news_img"><img src="{{ obj.images.url }}" alt="" /></div>
 
                         </div>
                     </div>
-                    <div class="item px-2">
-                        <div class="fh5co_hover_news_img">
-                            <div class="fh5co_news_img"><img src="images/RELIEF FUND/215269_1053555379331_8259_n.jpg"
-                                    alt="" /></div>
-                        </div>
-                    </div>
-                    <div class="item px-2">
-                        <div class="fh5co_hover_news_img">
-                            <div class="fh5co_news_img"><img src="images/RELIEF FUND/215973_1053568179651_1366_n.jpg"
-                                    alt="" /></div>
-                        </div>
-                    </div>
-                    <div class="item px-2">
-                        <div class="fh5co_hover_news_img">
-                            <div class="fh5co_news_img"><img src="images/RELIEF FUND/217077_1053571499734_6682_n.jpg"
-                                    alt="" /></div>
-                        </div>
-                    </div>
-                    <div class="item px-2">
-                        <div class="fh5co_hover_news_img">
-                            <div class="fh5co_news_img"><img src="images/RELIEF FUND/218165_1053572979771_6741_n.jpg"
-                                    alt="" /></div>
-                        </div>
-                    </div>
-
+                    {%endfor%}
                 </div>
             </div>
         </div>
-        <div class="" id="paraFont">Disaster, whether it is natural or man-made, has a huge impact on our daily life.
-            Man is altogether helpless when the natural catastrophe hits hard. Global warming and the rise in sea level
-            results in frequent floods, earthquakes, and landslides,
-            and so on. PMI has come up with this relief fund camp, where the contribution from this fund will be used to
-            help those affected by any kind of natural disaster or accident across the nation. At the time of disaster
-            we reach out by distributing
-            (or sending) food items, or sometimes even we provide direct financial support to individuals or families
-            affected by the disaster. During Bihar floods, we send food items, clothes, and blankets for the
-            flood-affected communities across
-            the state. Apart from sending relief package, in some cases, we helped by joining hands with others and
-            volunteered to help on the ground. PMI even send volunteers to help, for groundwork at the time of Dehradun
-            disaster relief work (landslides
-            and flood).</div>
+        <div>
+            {%for obj in event%}
+            <div>{{obj.content | safe}}</div>
+            {%endfor%}
+        </div>
         <br>
         <br>
         <br>

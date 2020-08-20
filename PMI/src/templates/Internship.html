@@ -20,60 +20,22 @@
                     </div>
                 </div>
                 <div class="owl-carousel owl-theme" style="align-items: center" id="slider2">
+                    {% for obj in pics %}
                     <div class="item px-2">
                         <div class="fh5co_hover_news_img">
-                            <div class="fh5co_news_img"><img src="images/IMG_1881.JPG" alt="" /></div>
+                            <div class="fh5co_news_img"><img src="{{ obj.images.url }}" alt="" /></div>
 
                         </div>
                     </div>
-                    <div class="item px-2">
-                        <div class="fh5co_hover_news_img">
-                            <div class="fh5co_news_img"><img src="images/IMG_1972.JPG" alt="" /></div>
-                        </div>
-                    </div>
-                    <div class="item px-2">
-                        <div class="fh5co_hover_news_img">
-                            <div class="fh5co_news_img"><img src="images/IMG_2231.JPG" alt="" /></div>
-                        </div>
-                    </div>
-                    <div class="item px-2">
-                        <div class="fh5co_hover_news_img">
-                            <div class="fh5co_news_img"><img src="images/IMG_2335.JPG" alt="" /></div>
-
-                        </div>
-                    </div>
+                    {%endfor%}
                 </div>
             </div>
         </div>
-        <div class="" id="paraFont">There are three ways people learn: hearing, seeing, and doing. Studies have shown
-            that the first two methods are significantly less effective than the third. Think about it, did you learn to
-            drive by hearing a lecture, watching a video, or
-            actually getting behind the wheel? The first two may have helped, but until you’ve actually done it, we
-            wouldn’t want to be driving with you! In the same way, hearing and seeing about an organization is one
-            thing, but the experience of
-            actually being a part of it is invaluable. This is the point and purpose of an internship: to get temporary
-            hands on experience - to get your feet wet - and as a result, re-evaluate your goals, ambitions, and skills.
-            You wouldn’t believe
-            the kind of opportunities there are for internships through PMI! Social work, family and children’s health,
-            teaching, counseling, administration, finance, visual communication, and graphic design are just a handful
-            of available roles.
-            Moreover, PMI is proud to welcome both foreign and domestic students. In the past our interns have come from
-            a variety of schools and backgrounds such as USC (University of Southern California) DU (Delhi University),
-            and Cedarville University
-            (Columbus, OH). The exciting part is we continue to grow and reach further in new and different ways! And as
-            we do, we are able to encourage potential interns to come with their own projects that would serve to either
-            enhance existing
-            work, or create new possibilities for us! We also recognize that each student comes with existing
-            requirements for their internship, so we are sensitive to work with you individually to meet those demands.
-            While special summer internships
-            are available, we are flexible to each student’s schedule. The criteria for internships with PMI is a simple
-            matter, answered in two easy questions: First, are you an official student at a university? Internships are
-            not summer jobs, but
-            rather, academic requirements for serious students. It is a learning experience primarily, not a money
-            making opportunity. And second, do you have the desire to serve and learn? If you can answer yes to both,
-            then PMI may be a promising
-            prospect. In fact, we see it as a once-in-a-lifetime chance to find more than just a passing mark. Find a
-            purpose. Find a course to set your eyes on. Contact us when you’re ready!</div>
+        <div>
+            {%for obj in event%}
+            <div>{{obj.content | safe}}</div>
+            {%endfor%}
+        </div>
         <br>
         <br>
         <br>

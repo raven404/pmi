@@ -50,19 +50,10 @@
                 </div>
             </div>
         </div>
-        <div class="" id="paraFont">It may not be the mother of all languages, but English certainly is a gateway to
-            better careers and fields of learning. In fact, whether you know it can make or break the outcome of your
-            education. Striving to meet student’s needs, PMI offers
-            a variety of English courses throughout the year. Many of these courses are free or minimal cost. During the
-            summer months English courses reach the peak of availability. This past summer one week long to one month
-            long (6 days a week)
-            courses were offered. Speakers included native English speakers from the U.S., several of whom have even
-            made English teaching their profession. The subject matter generally includes any or all of the following:
-            -vocabulary -grammar -pronunciation
-            -writing -reading comprehension -conversational skill -idioms/expressions Even so throughout the rest of the
-            year courses can still be found! Currently one American volunteer is our resident teacher in the time that
-            he is here. Be sure
-            to check the News and Calendar for the upcoming English opportunities!
+        <div>
+            {%for obj in event%}
+            <div>{{obj.content | safe}}</div>
+            {%endfor%}
         </div>
         <br>
         <br>
