@@ -3,7 +3,7 @@
 
 {% include 'head.html' %}
 
-<body style="background-color:#f1f1f1;">
+<body>
 
     {% include 'header.html' %}
 
@@ -16,7 +16,15 @@
         {% endfor %}
     </ul>
     {% endif %} -->
-    {% include 'messages.html' %} {% block content %} {% endblock content %} {% include 'footer.html' %} {% include 'scripts.html' %}
+    {% include 'messages.html' %}
+
+
+    {% block content %}
+    {% endblock content %}
+
+
+    {% include 'footer.html' %}
+    {% include 'scripts.html' %}
 
 </body>
 

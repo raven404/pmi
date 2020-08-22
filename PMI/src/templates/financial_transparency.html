@@ -1,6 +1,10 @@
-{% extends 'base.html' %} {% load static %} {% block content %}
+{% extends 'base.html' %}
 
-<div class=" " style="padding: 10px;">
+{% load static %}
+
+{% block content %}
+
+<div class="container-fluid contact_us_bg_img">
     <div class="container">
         <div class="row">
             <a href="#" id="Heading">
@@ -8,11 +12,18 @@
             </a>
         </div>
 
-        <div id="paraFont"> <img src="{% static 'images/logo.png' %}" style=" height:350px;  min-width: 350px ; border-radius:450px;float: left; padding-right:8px">
-            <p style="padding:52px;">Passion Movement International is committed to the transcendence of accountability and transparency. The Administration of PMI sees the standards through independent internal audit, the legal audit by a well-known audit firm, an external audit
-                by local external auditors, operation audits, quarterly evaluations, monitoring, and timely peep reviews. At the fundamental, our partnership approach in working with community-based organizations ensures we are accountable, committed,
-                and responsive to children, their communities, our volunteers, and Forum. It has always been PMI aim to convey a public image conforming to reality, and always to speak and act honestly. Our goal is serving to bring Hope to humanity with
-                Love and the Truth consistently and with long term vision.</p>
+        <div id="paraFont"> <img src="{% static 'images/logo.png' %}"
+                style=" height:350px;  min-width: 350px ; border-radius:450px;float: left; padding-right:8px">
+            <p style="padding:52px;">Passion Movement International is committed to the transcendence of accountability
+                and transparency. The Administration of PMI sees the standards through independent internal audit, the
+                legal audit by a well-known audit firm, an external
+                audit by local external auditors, operation audits, quarterly evaluations, monitoring, and timely peep
+                reviews. At the fundamental, our partnership approach in working with community-based organizations
+                ensures we are accountable,
+                committed, and responsive to children, their communities, our volunteers, and Forum. It has always been
+                PMI aim to convey a public image conforming to reality, and always to speak and act honestly. Our goal
+                is serving to bring Hope
+                to humanity with Love and the Truth consistently and with long term vision.</p>
         </div>
         <br>
         <br>
@@ -68,5 +79,4 @@
         </div>
     </div>
 </div>
-
 {%endblock content%}}
