@@ -1,11 +1,7 @@
-{% extends 'base.html' %}
-
-{% load static %}
-
-{% block content %}
+{% extends 'base.html' %} {% load static %} {% block content %}
 
 
-<div class="container-fluid contact_us_bg_img">
+<div class="container-fluid" style="padding-top: 20px;">
 
     {% for obj in community%}
     <div class="container">
@@ -127,45 +123,35 @@
                     <div class="col-md-5 " style=" height:350px; min-width: 350px ; border-radius:350px;float: left; ">
                         {%endif%}
 
-                        <div class="fh5co_hover_news_img "
-                            style="width:100%;max-width:700px;height:100% ; max-height: 700px; ">
+                        <div class="fh5co_hover_news_img " style="width:100%;max-width:700px;height:100% ; max-height: 700px; ">
 
-                            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel"
-                                style="height: 500px;">
+                            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" style="height: 500px;">
                                 <ol class="carousel-indicators">
-                                    {% for obj in photos %}
-                                    {% if forloop.first %}
-                                    <li data-target="#carouselExampleIndicators" data-slide-to="{{forloop.counter0}}"
-                                        class="active"></li>
+                                    {% for obj in photos %} {% if forloop.first %}
+                                    <li data-target="#carouselExampleIndicators" data-slide-to="{{forloop.counter0}}" class="active"></li>
                                     {% else %}
                                     <li data-target="#carouselExampleIndicators" data-slide-to="{{forloop.counter0}}">
                                     </li>
 
-                                    {% endif %}
-                                    {% endfor %}
+                                    {% endif %} {% endfor %}
                                     <!-- <li data-target="#carouselExampleIndicators" data-slide-to="2"></li> -->
                                 </ol>
                                 <div class="carousel-inner" style="height: 500px;">
-                                    {% for p in photos %}
-                                    {% if forloop.first %}
+                                    {% for p in photos %} {% if forloop.first %}
                                     <div class="carousel-item active  ">
                                         {% else %}
                                         <div class="carousel-item  ">
                                             {% endif %}
-                                            <img class="d-block w-100 h-50" class="h-50 d-inline-block"
-                                                src="{{ p.images.url}}" style="align-items: center"
-                                                alt="{{forloop.counter0}}">
+                                            <img class="d-block w-100 h-50" class="h-50 d-inline-block" src="{{ p.images.url}}" style="align-items: center" alt="{{forloop.counter0}}">
                                         </div>
                                         {% endfor %}
                                     </div>
 
-                                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button"
-                                        data-slide="prev">
+                                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
                                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                         <span class="sr-only">Previous</span>
                                     </a>
-                                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button"
-                                        data-slide="next">
+                                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
                                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                         <span class="sr-only">Next</span>
                                     </a>
@@ -181,7 +167,7 @@
     </div>
 
     <!-- 
-<div class="container-fluid contact_us_bg_img">
+<div class="container-fluid">
 
     <div class="container" id="Nandlal Community">
         <div class="row">

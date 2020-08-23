@@ -1,11 +1,7 @@
-{% extends 'base.html' %}
-
-{% load static %}
-
-{% block content %}
+{% extends 'base.html' %} {% load static %} {% block content %}
 
 
-<div class=" " style="padding:30px;"  id="Success Stories">
+<div class=" " style="padding:30px;" id="Success Stories">
     <div class="container ">
         <div class="row ">
             <a href="# " id="Heading">
@@ -31,9 +27,8 @@
                 </div>
             </div>
         </div>
-        <div> <br>
-            {%for obj in event%}
-            <div>{{obj.content | safe}}</div>
+        <div> <br> {%for obj in event%}
+            <div id="paraFont">{{obj.content | safe}}</div>
             {%endfor%}
         </div>
         <br>

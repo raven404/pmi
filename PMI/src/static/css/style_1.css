@@ -1372,11 +1372,25 @@
         font-weight: 400;
         padding: 10px;
         text-align: justify;
-        
     }
     
     #Heading {
         font-size: larger;
         font-family: 'Times New Roman', Times, serif;
         color: #6b5b95 !important;
+        padding-top: 30px;
+    }
+    
+    #badaR {
+        height: 350px;
+        min-width: 350px;
+        border-radius: 350px;
+        float: right !important;
+    }
+    
+    #badaL {
+        height: 350px;
+        min-width: 350px;
+        border-radius: 350px;
+        float: left !important;
     }
