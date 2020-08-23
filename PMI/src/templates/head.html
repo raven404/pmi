@@ -21,30 +21,46 @@
     <link href="{% static 'css/style_1.css' %}" rel="stylesheet" type="text/css" />
     <style>
         .navbar-nav li:hover>ul.dropdown-menu {
-            font-weight: bolder;
             display: block;
         }
         
         .dropdown-submenu {
-            font-weight: bolder;
             position: relative;
         }
         
         .dropdown-submenu>.dropdown-menu {
-            font-weight: bolder;
             top: 0;
-            left: 80%;
-            margin-top: -5px;
+            left: 100%;
+            margin-top: -6px;
         }
         /* rotate caret on hover */
         
         .dropdown-menu>li>a:hover:after {
-            font-weight: bolder;
             text-decoration: underline;
             transform: rotate(-90deg);
         }
     </style>
-
+    <style>
+        .navbar-nav li:hover>ul.dropdown-menu {
+            display: block;
+        }
+        
+        .dropdown-submenu {
+            position: relative;
+        }
+        
+        .dropdown-submenu>.dropdown-menu {
+            top: 0;
+            left: 100%;
+            margin-top: -6px;
+        }
+        /* rotate caret on hover */
+        
+        .dropdown-menu>li>a:hover:after {
+            text-decoration: underline;
+            transform: rotate(-90deg);
+        }
+    </style>
     <!-- Modernizr JS -->
     <style>
         .navbar-nav li:hover>ul.dropdown-menu {

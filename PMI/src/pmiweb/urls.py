@@ -9,6 +9,8 @@ urlpatterns = [
     path('', include('posts.urls', namespace='posts')),
     path('', include('subscribe.urls', namespace='subscribe')),
     path('', include('events.urls', namespace='events')),
+    path('', include('community.urls', namespace='community')),
+
 
 
     path('tinymce/', include('tinymce.urls')),

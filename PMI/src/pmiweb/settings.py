@@ -34,6 +34,7 @@ INSTALLED_APPS = [
     'tinymce',
     'subscribe',
     'events',
+    'community',
 
 ]
 
