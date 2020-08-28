@@ -1,50 +1,54 @@
-{% extends 'base.html' %}
+{% extends 'base.html' %} {% load static %} {% block content %}
 
-<div class="container">
-    <div>
-        <div class="fh5co_heading fh5co_heading_border_bottom py-2 mb-4">
 
-        </div>
-    </div>
-    <div class="owl-carousel owl-theme" style="align-items: center" id="slider2">
-        <div class="item px-2">
-            <div class="fh5co_hover_news_img">
-                <div class="fh5co_news_img"><img src="images/music band/19.jpg" alt="" /></div>
+<div class="container-fluid pt-3">
+    <div style="background-color:#f1f1f1 ;padding: 20px;">
 
-            </div>
-        </div>
-        <div class="item px-2">
-            <div class="fh5co_hover_news_img">
-                <div class="fh5co_news_img"><img src="images/music band/20.jpg" alt="" /></div>
-            </div>
-        </div>
-        <div class="item px-2">
-            <div class="fh5co_hover_news_img">
-                <div class="fh5co_news_img"><img src="images/KIDS CAMP/IMG_3156.JPG" alt="" /></div>
-            </div>
-        </div>
-        <div class="item px-2">
-            <div class="fh5co_hover_news_img">
-                <div class="fh5co_news_img"><img src="images/KIDS CAMP/IMG_3238.JPG" alt="" /></div>
-
-            </div>
-        </div>
-        <div class="item px-2">
-            <div class="fh5co_hover_news_img">
-                <div class="fh5co_news_img"><img src="images/KIDS CAMP/IMG_3274.JPG" alt="" /></div>
-
+        <div class="container animate-box" data-animate-effect="fadeIn">
+            <div>
+                <div class="fh5co_heading fh5co_heading_border_bottom py-2 mb-4" id="Heading">
+                    <h1> <b>Alumini :</b></h1>
+                </div>
             </div>
         </div>
     </div>
 </div>
-</div>
-<div class="" id="paraFont">Networking of former volunteers and students with the current volunteers and students where exchange of skills and sharing of experience takes place for building up one another making a positive change. </div>
-<br>
-<br>
-<br>
 
 
-</div>
+<div class="container-fluid">
+    <div class="container">
+
+        <div class="container-fluid pb-4 pt-5">
+            <div class="container animate-box">
+                <div>
+                    <div class="fh5co_heading fh5co_heading_border_bottom py-2 mb-4">
+
+                    </div>
+                </div>
+                <div class="owl-carousel owl-theme" style="align-items: center" id="slider2">
+                    {% for obj in pics %}
+                    <div class="item px-2">
+                        <div class="fh5co_hover_news_img">
+                            <div class="fh5co_news_img"><img src="{{ obj.images.url }}" alt="" /></div>
+
+                        </div>
+                    </div>
+                    {%endfor%}
+                </div>
+            </div>
+        </div>
+        <div>
+            {%for obj in event%}
+            <div id="paraFont">{{obj.content | safe}}</div>
+            {%endfor%}
+
+        </div>
+        <br>
+        <br>
+        <br>
+
+
+    </div>
 
 </div>
 
@@ -93,5 +97,37 @@
         </div>
     </div>
 </div>
+<!-- 
+    <div class="container-fluid mb-4 ">
+        <div class="container ">
+            <div class="col-12 text-center contact_margin_svnit ">
+                <div class="text-center fh5co_heading py-2 ">Contact Us</div>
+            </div>
+            <div class="row ">
+                <div class="col-12 col-md-6 ">
+                    <form class="row " id="fh5co_contact_form ">
+                        <div class="col-12 py-3 ">
+                            <input type="text " class="form-control fh5co_contact_text_box " placeholder="Enter Your Name " />
+                        </div>
+                        <div class="col-6 py-3 ">
+                            <input type="text " class="form-control fh5co_contact_text_box " placeholder="E-mail " />
+                        </div>
+                        <div class="col-6 py-3 ">
+                            <input type="text " class="form-control fh5co_contact_text_box " placeholder="Subject " />
+                        </div>
+                        <div class="col-12 py-3 ">
+                            <textarea class="form-control fh5co_contacts_message " placeholder="Message "></textarea>
+                        </div>
+                        <div class="col-12 py-3 text-center "> <a href="# " class="btn contact_btn ">Send Message</a> </div>
+                    </form>
+                </div>
+                <div class="col-12 col-md-6 align-self-center ">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13998.709983455392!2d77.1905633!3d28.6992924!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7690673d5176a1f8!2sPassion%20Movement%20International!5e0!3m2!1sen!2sin!4v1582456176733!5m2!1sen!2sin "
+                        class="map_sss " allowfullscreen></iframe>
 
+                </div>
+            </div>
+        </div>
+    </div>
+ -->
 {% endblock content %}

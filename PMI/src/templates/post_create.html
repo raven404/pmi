@@ -1,7 +1,5 @@
-{% extends 'base.html' %}
+{% extends 'base.html' %} {% load static %} {%block content%}
 
-
-{% block content %}
 <div class="container-fluid pb-4 pt-4 paddding">
     <div class="container paddding">
         <div class="row mx-0">
@@ -14,8 +12,7 @@
                         {{ form.media }}
 
                         <form method="POST" action="." enctype="multipart/form-data">
-                            {% csrf_token %}
-                            {{ form.as_p}}
+                            {% csrf_token %} {{ form.as_p}}
                             <button class="btn btn-primary" type="submit">Submit</button>
                         </form>
                     </div>
