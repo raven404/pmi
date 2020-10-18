@@ -20,7 +20,7 @@
     <div class="container">
         <div class="row">
             <div class="col-12 col-md-3 fh5co_padding_menu">
-                <img src="{% static 'images/logo.png' %}" alt="img" class="avatar" />
+                <img src="{% static 'images/logo.png' %}" alt="img" href="/index" class="avatar" />
             </div>
 
             <div class="col-12 col-md-9 align-self-center fh5co_mediya_right">
@@ -53,7 +53,7 @@
                             Passion Movement International</h1>
                     </b></p>
                 <div class="d-inline-block text-center dd_position_relative" style="padding-bottom: 10px;">
-                    <a href="Donation.html"><input type="submit" value="Donate" class="submit" id="reset" name="reset" /></a>
+                    <a href="/donate"><input type="submit" value="Donate" class="submit" id="reset" name="reset" /></a>
                 </div>
                 <div class="clearfix"></div>
             </div>
@@ -62,10 +62,12 @@
 </div>
 
 <div class="container-fluid bg-faded fh5co_padd_mediya padding_786">
-    <div class="" style="padding-left:10px;">
+    <div class="" style="padding-left:10px;   display: flex;
+  align-items: center;
+  justify-content: center ">
         <nav class="navbar navbar-toggleable-md navbar-light ">
             <button class="navbar-toggler navbar-toggler-right mt-3" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="fa fa-bars"></span></button>
-            <a class="navbar-brand" href="#"><img src="{% static 'images/logo.png' %}" alt="img" class="mobile_logo_width" /></a>
+          
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item dropdown">
