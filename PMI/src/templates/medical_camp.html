@@ -1,6 +1,10 @@
-{% extends 'base.html' %} {% load static %} {% block content %}
+{% extends 'base.html' %}
 
-<div class="container-fluid">
+{% load static %}
+
+{% block content %}
+
+<div class="container-fluid contact_us_bg_img">
     <div class="container ">
         <div class="row ">
             <a href="# " id="Heading">
@@ -28,7 +32,7 @@
         </div>
         <div>
             {%for obj in event%}
-            <div id="paraFont">{{obj.content | safe}}</div>
+            <div>{{obj.content | safe}}</div>
             {%endfor%}
         </div>
         <br>
