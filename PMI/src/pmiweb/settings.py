@@ -35,7 +35,7 @@ INSTALLED_APPS = [
     'subscribe',
     'events',
     'community',
-    'donation',
+    'news',
 
 ]
 

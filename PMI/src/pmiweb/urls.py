@@ -10,8 +10,7 @@ urlpatterns = [
     path('', include('subscribe.urls', namespace='subscribe')),
     path('', include('events.urls', namespace='events')),
     path('', include('community.urls', namespace='community')),
-    path('', include('donation.urls', namespace='donation')),
-
+    path('', include('news.urls', namespace='news')),
 
 
 

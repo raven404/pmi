@@ -203,7 +203,7 @@ def language(request):
 
 def Alumni(request):
     event = Event.objects.filter(
-        Category__title__exact="Alummni")
+        Category__title__exact="Alumni")
     pics = EventImage.objects.filter(event=event.first())
     return render(request, 'Alumni.html', {
         'now': now,
